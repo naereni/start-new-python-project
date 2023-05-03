@@ -22,7 +22,7 @@ poetry self update --preview
 poetry init
 poetry env use python3.10
 poetry shell
-poetry add --dev pytest-cov pre-commit flake8 isort black mypy
+poetry add --dev pytest-cov pre-commit flake8 isort "black[jupyter]" mypy
 ```
 
 ### Config examples:
