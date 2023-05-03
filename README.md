@@ -19,8 +19,6 @@ poetry self update --preview
 
 ### Install environment with dev dependences  
 ```
-git clone <git@github.com:user/project.git>
-cd project
 poetry init
 poetry env use python3.10
 poetry shell
@@ -41,9 +39,6 @@ cat add-to-config/setup.cfg >> project/setup.cfg
 
 ### Normal .gitignore + enable autoupdate pre-commit
 ```
-echo '.coverage' > .gitignore
-curl -s https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore >> .gitignore
-git init -b main
 pre-commit install
 pre-commit autoupdate
 pre-commit run --all-files
